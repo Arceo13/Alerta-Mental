@@ -1,0 +1,170 @@
+/* Paleta de colores */
+:root {
+  --color-bg: #F2EFE7;
+  --color-primary: #9ACBD0;
+  --color-secondary: #48A6A7;
+  --color-accent: #006A71;
+  --color-text: #333;
+}
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Header y navegación */
+header {
+  background-color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Sección Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: var(--color-primary);
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+}
+
+.hero-img {
+  max-width: 40%;
+  border-radius: 8px;
+}
+
+/* Botón primario */
+.btn-primary {
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+}
+
+/* Sección Intro/About/Recursos */
+.intro, .about-section, .resources-section, .contact-section, .test-section {
+  padding: 40px 20px;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Tarjetas de recursos */
+.resource-card {
+  background-color: #fff;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Cuestionario */
+.test-section form {
+  margin-top: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.question select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--color-accent);
+}
+
+.result-box {
+  margin-top: 30px;
+  background-color: #fff;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Formulario de contacto */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--color-accent);
+  color: #fff;
+  margin-top: 40px;
+}

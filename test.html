@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario - Alerta Mental</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><h1>Alerta Mental</h1></a>
+    </div>    
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre Nosotros</a></li>
+        <li><a href="test.html" class="active">Cuestionario</a></li>
+        <li><a href="resources.html">Recursos</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="test-section">
+    <h2>Cuestionario de Bienestar Emocional</h2>
+    <p>Contesta con sinceridad para obtener una evaluación aproximada de tu estado emocional.</p>
+
+    <form id="quizForm">
+      <div class="question">
+        <label>1. ¿Te sientes generalmente motivado para realizar tus actividades diarias?</label>
+        <select name="q1" required>
+          <option value="">Selecciona una opción</option>
+          <option value="0">No</option>
+          <option value="1">A veces</option>
+          <option value="2">Sí</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>2. ¿Te cuesta conciliar el sueño por preocupaciones?</label>
+        <select name="q2" required>
+          <option value="">Selecciona una opción</option>
+          <option value="2">Sí</option>
+          <option value="1">A veces</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>3. ¿Te sientes estresado o preocupado con frecuencia?</label>
+        <select name="q3" required>
+          <option value="">Selecciona una opción</option>
+          <option value="2">Sí</option>
+          <option value="1">A veces</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>4. ¿Tienes dificultades para dormir o descansar adecuadamente?</label>
+        <select name="q4" required>
+          <option value="">Selecciona una opción</option>
+          <option value="2">Sí</option>
+          <option value="1">A veces</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>5. ¿Te sientes solo o aislado de tus compañeros y amigos?</label>
+        <select name="q5" required>
+          <option value="">Selecciona una opción</option>
+          <option value="2">Sí</option>
+          <option value="1">A veces</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>6. ¿Resuelves conflictos con facilidad?</label>
+        <select name="q6" required>
+          <option value="">Selecciona una opción</option>
+          <option value="0">No</option>
+          <option value="1">A veces</option>
+          <option value="2">Sí</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>7. ¿Tienes pensamientos negativos sobre ti mismo o sobre tu futuro?</label>
+        <select name="q7" required>
+          <option value="">Selecciona una opción</option>
+          <option value="2">Sí</option>
+          <option value="1">A veces</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>8. ¿Has notado cambios significativos en tu apetito o peso?</label>
+        <select name="q8" required>
+          <option value="">Selecciona una opción</option>
+          <option value="2">Sí</option>
+          <option value="1">A veces</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>9. ¿Disfrutas de las actividades que antes te resultaban placenteras?</label>
+        <select name="q9" required>
+          <option value="">Selecciona una opción</option>
+          <option value="0">No</option>
+          <option value="1">A veces</option>
+          <option value="2">Sí</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>10. ¿Sientes preocupación por las responsabilidades académicas o personales?</label>
+        <select name="q10" required>
+          <option value="">Selecciona una opción</option>
+          <option value="2">Sí</option>
+          <option value="1">A veces</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-primary">Enviar Respuestas</button>
+    </form>
+
+    <div id="quizResult" class="result-box"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Alerta Mental. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
