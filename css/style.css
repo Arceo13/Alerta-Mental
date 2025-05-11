@@ -168,3 +168,40 @@ footer {
   color: #fff;
   margin-top: auto;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-contenido {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px 30px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+.modal-contenido button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #48a6a8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.modal-contenido button:hover {
+  background-color: #006a71;
+}
